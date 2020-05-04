@@ -1,0 +1,2 @@
+rootProject.name='EcoBol For Restaurants'
+include ':app'
