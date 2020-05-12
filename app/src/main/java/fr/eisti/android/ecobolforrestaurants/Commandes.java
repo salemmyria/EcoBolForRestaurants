@@ -73,7 +73,7 @@ public class Commandes extends AppCompatActivity {
 
 
 
-    private void setupDrawerContent(NavigationView navigationView) {
+    public void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -90,31 +90,31 @@ public class Commandes extends AppCompatActivity {
         Class fragmentClass;
         switch(menuItem.getItemId()) {
             case R.id.mon_restaurant:
-                fragmentClass = MonRestaurant.class;
+                startActivity(new Intent(Commandes.this,MonRestaurant.class));
                 break;
             case R.id.mon_menu:
-                fragmentClass = MonMenu.class;
+                startActivity(new Intent(Commandes.this,MonMenu.class));
                 break;
             case R.id.mes_horaires:
-                fragmentClass = MesHoraires.class;
+                startActivity(new Intent(Commandes.this,MesHoraires.class));
                 break;
             case R.id.compagne_marketing:
-                fragmentClass = CompagneMarketing.class;
+                startActivity(new Intent(Commandes.this,CompagneMarketing.class));
                 break;
             case R.id.contact:
-                fragmentClass = Contact.class;
+                startActivity(new Intent(Commandes.this,Contact.class));
                 break;
             case R.id.parametres:
-                fragmentClass = Parametres.class;
+                startActivity(new Intent(Commandes.this,Parametres.class));
                 break;
             case R.id.a_propos:
-                fragmentClass = APropos.class;
+                startActivity(new Intent(Commandes.this,APropos.class));
                 break;
             default:
                 fragmentClass = Commandes.class;
         }
 
-        try {
+      /*  try {
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
@@ -129,7 +129,7 @@ public class Commandes extends AppCompatActivity {
         // Set action bar title
         setTitle(menuItem.getTitle());
         // Close the navigation drawer
-        mDrawer.closeDrawers();
+        mDrawer.closeDrawers();*/
     }
 
 
@@ -145,6 +145,9 @@ public class Commandes extends AppCompatActivity {
 
         // Find our drawer view
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        NavigationView navigationView;
+        navigationView = (NavigationView)findViewById(R.id.nvView);
+        setupDrawerContent(navigationView);
 
 
 
@@ -329,7 +332,7 @@ public class Commandes extends AppCompatActivity {
                      @Override
                      public void onClick(View v) {
                          //Toast toast;
-                         Toast.makeText(ctx,"Test Button",Toast.LENGTH_SHORT).show();
+                         Toast.makeText(ctx,"New command",Toast.LENGTH_SHORT).show();
                          //buttonTerminee.setVisibility(View.VISIBLE);
                      }
                  });

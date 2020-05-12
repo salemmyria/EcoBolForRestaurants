@@ -28,20 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="63dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_end="-5dp" />
-
         <FrameLayout
             android:id="@+id/flContent"
             android:layout_width="421dp"
@@ -50,8 +36,8 @@
 
             <ExpandableListView
                 android:id="@+id/idListView"
-                android:layout_width="401dp"
-                android:layout_height="514dp"
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
                 android:layout_marginTop="112dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginRight="4dp">
@@ -61,22 +47,25 @@
 
 
         <ImageView
-                android:id="@+id/commandes"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                app:srcCompat="@drawable/stargrey" />
+            android:id="@+id/commandes"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/stargrey" />
 
-            <TextView
-                android:id="@+id/promostext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Exceptions"
-                android:textColor="#605E5E" />
+        <TextView
+            android:id="@+id/promostext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exceptions"
+            android:textColor="#605E5E"
+            android:visibility="gone" />
 
         <ImageView
             android:id="@+id/stock"
             android:layout_width="80dp"
             android:layout_height="60dp"
+            android:visibility="gone"
             app:srcCompat="@drawable/stargrey" />
 
         <TextView
@@ -84,20 +73,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Commandes"
-            android:textColor="#605E5E" />
+            android:textColor="#605E5E"
+            android:visibility="gone" />
 
         <ImageView
-                android:id="@+id/promos"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                app:srcCompat="@drawable/stargrey" />
+            android:id="@+id/promos"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/stargrey" />
 
-            <TextView
-                android:id="@+id/stocktext"
-                android:layout_width="62dp"
-                android:layout_height="18dp"
-                android:text="Historique"
-                android:textColor="#605E5E" />
+        <TextView
+            android:id="@+id/stocktext"
+            android:layout_width="62dp"
+            android:layout_height="18dp"
+            android:text="Historique"
+            android:textColor="#605E5E"
+            android:visibility="gone" />
 
 
 
@@ -111,8 +103,9 @@
         android:background="@android:color/white"
         app:menu="@layout/drawer_view"
         tools:ignore="MissingConstraints" >
-
     </com.google.android.material.navigation.NavigationView>
+
+
     </androidx.drawerlayout.widget.DrawerLayout>
 
 
