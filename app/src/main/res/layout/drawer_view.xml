@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:layout_width="match_parent">
+        <item
+            android:id="@+id/mon_restaurant"
+            android:icon="@drawable/mon_resto"
+            android:title="Mon restaurant" />
+        <item
+            android:id="@+id/mon_menu"
+            android:icon="@drawable/menu"
+            android:title="Mon menu" />
+        <item
+            android:id="@+id/mes_horaires"
+            android:icon="@drawable/horaire"
+            android:title="Mes haraires" />
+        <item
+            android:id="@+id/compagne_marketing"
+            android:icon="@drawable/marketing"
+            android:title="Compagne Marketing" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/contact"
+            android:title="Contact" />
+        <item
+            android:id="@+id/parametres"
+            android:icon="@drawable/settings"
+            android:title="Parametres" />
+        <item
+            android:id="@+id/a_propos"
+            android:icon="@drawable/about"
+            android:title="Compagne A propos" />
+
+
+
+    </group>
+</menu>

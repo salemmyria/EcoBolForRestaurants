@@ -90,6 +90,7 @@ public class Login extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        startActivity(new Intent(Login.this,Commandes.class));
                     }
 
                     public void onError(ANError error) {

@@ -24,6 +24,14 @@
         <activity android:name=".Commandes"></activity>
         <activity android:name=".Historique"></activity>
         <activity android:name=".Promos"></activity>
+        <activity android:name=".MonRestaurant"></activity>
+        <activity android:name=".MonMenu"></activity>
+        <activity android:name=".MesHoraires"></activity>
+        <activity android:name=".CompagneMarketing"></activity>
+        <activity android:name=".Contact"></activity>
+        <activity android:name=".Parametres"></activity>
+        <activity android:name=".APropos"></activity>
+
 
     </application>
 
